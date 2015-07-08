@@ -22,7 +22,8 @@ Steps on a native OS (Not in a Docker container):
   1. visit the following LSI pages in a _WEB BROWSER_ and accept the EULA
     1. [[http://www.lsi.com/downloads/Public/Host%20Bus%20Adapters/Host%20Bus%20Adapters%20Common%20Files/SAS_SATA_6G_P19/SAS2IRCU_P19.zip]]
     1. [[http://www.lsi.com/downloads/Public/RAID%20Controllers/RAID%20Controllers%20Common%20Files/8.07.14_MegaCLI.zip]]
-  1. copy the two downloaded files copied into: `/tftpboot/files/raid`
+    1. [[http://www.lsi.com/downloads/Public/Host%20Bus%20Adapters/Host%20Bus%20Adapters%20Common%20Files/SAS_SATA_12G_P8/SAS3IRCU_P8.zip]]
+  1. copy the three downloaded files copied into: `/tftpboot/files/raid`
   1. update the permissions to allow guest reading: `chmod 664 *`
 
 Steps with Docker:
@@ -31,7 +32,8 @@ Steps with Docker:
   1. visit the following LSI pages in a _WEB BROWSER_ and accept the EULA
     1. [[http://www.lsi.com/downloads/Public/Host%20Bus%20Adapters/Host%20Bus%20Adapters%20Common%20Files/SAS_SATA_6G_P19/SAS2IRCU_P19.zip]]
     1. [[http://www.lsi.com/downloads/Public/RAID%20Controllers/RAID%20Controllers%20Common%20Files/8.07.14_MegaCLI.zip]]
-  1. copy the two downloaded files copied into: `~/.cache/opencrowbar/tftpboot/files/raid`
+    1. [[http://www.lsi.com/downloads/Public/Host%20Bus%20Adapters/Host%20Bus%20Adapters%20Common%20Files/SAS_SATA_12G_P8/SAS3IRCU_P8.zip]]
+  1. copy the three downloaded files copied into: `~/.cache/opencrowbar/tftpboot/files/raid`
   1. update the permissions to allow guest reading: `chmod 664 *`
 
 *IMPORTANT* You should check [[raid/chef/roles/raid-tools-install/role-template.json]] to confirm that the file names are correct.

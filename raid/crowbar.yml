@@ -75,6 +75,17 @@ roles:
             "archive": "SAS2IRCU_P19.zip"
             "source": "http://www.lsi.com/downloads/Public/Host%20Bus%20Adapters/Host%20Bus%20Adapters%20Common%20Files/SAS_SATA_6G_P19/SAS2IRCU_P19.zip"
             "linux_installcode": "cd /usr/sbin && unzip -j -o '/tmp/SAS2IRCU_P19.zip' 'SAS2IRCU_P19/sas2ircu_linux_x86_rel/sas2ircu' && chmod 755 sas2ircu"
+          - "name": "sas3ircu"
+            "type": "BarclampRaid::Lsi_Sas3ircu"
+            "raid_levels":
+              - "jbod"
+              - "raid0"
+              - "raid1"
+              - "raid10"
+            "executable": "/usr/sbin/sas3ircu"
+            "archive": "SAS3IRCU_P8.zip"
+            "source": "http://www.lsi.com/downloads/Public/Host%20Bus%20Adapters/Host%20Bus%20Adapters%20Common%20Files/SAS_SATA_12G_P8/SAS3IRCU_P8.zip"
+            "linux_installcode": "cd /usr/sbin && unzip -j -o '/tmp/SAS3IRCU_P8.zip' 'SAS3IRCU_P8/sas3ircu_linux_i686_x86-64_rel/sas3ircu' && chmod 755 sas3ircu"
     wants-attribs:
       - provisioner-webservers
   - name: raid-discover
